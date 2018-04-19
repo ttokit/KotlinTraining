@@ -5,3 +5,6 @@ fun welcome() {
 }
 
 // TODO: declare hello function
+fun hello() {
+    println("Hello World!")
+}
