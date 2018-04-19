@@ -19,4 +19,20 @@ class SampleTest {
         // TODO: implement to call hello function
         hello()
     }
+
+    @Test
+    fun testFizzbuzz() {
+        //fizzbuzz()
+
+        assertEquals(fizzbuzz(1), "1")
+        assertEquals(fizzbuzz(3), "Fizz")
+        assertEquals(fizzbuzz(5), "Buzz")
+        assertEquals(fizzbuzz(15), "FizzBuzz")
+        assertEquals(fizzbuzz(22), "22")
+    }
+
+    @Test
+    fun testFizzbuzz_when() {
+        fizzbuzz_when()
+    }
 }
