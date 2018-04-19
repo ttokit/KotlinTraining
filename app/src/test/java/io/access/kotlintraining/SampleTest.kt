@@ -51,4 +51,20 @@ class SampleTest {
         assertEquals(isLeapYear(2000), true)
         assertEquals(isLeapYear(2400), true)
     }
+
+    @Test
+    fun testPower() {
+        assertEquals(power(2,0), 1)
+        assertEquals(power(2,1), 2)
+        assertEquals(power(2,5), 32)
+        assertEquals(power(11,5), 161051)
+        assertEquals(power(10, 5), 100000)
+        assertEquals(power(2,10), 1024)
+
+        assertEquals(power(-3, 2), 0)
+
+        assertEquals(power(2.0,0.0), 1.0)
+        assertEquals(power(3.0,1.0), 3.0)
+        assertEquals(power(2.5, 3.1), 17.12434728726902)
+    }
 }

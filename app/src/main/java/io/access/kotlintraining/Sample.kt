@@ -1,5 +1,7 @@
 package io.access.kotlintraining
 
+import kotlin.math.pow
+
 fun welcome() {
     println("welcome to ACCESS!")
 }
@@ -44,5 +46,23 @@ fun fizzbuzz(i: Int): String {
 }
 
 fun isLeapYear(y: Int): Boolean {
-    return (y % 4 == 0) && ! (y % 100 == 0 && y % 400 != 0)
+    return (y % 4 == 0) && !(y % 100 == 0 && y % 400 != 0)
+}
+
+fun power(a: Int, n: Int): Long {
+    if (a < 0 || n < 0) {
+        println("inputs must be positive. return 0")
+        return 0
+    }
+
+    var ans = 1L
+    for (i in 0..(n-1)) {
+        ans *= a
+    }
+
+    return ans
+}
+
+fun power(a: Double, b: Double): Double {
+    return a.pow(b)
 }
