@@ -35,4 +35,20 @@ class SampleTest {
     fun testFizzbuzz_when() {
         fizzbuzz_when()
     }
+
+    @Test
+    fun testIsLeapYear() {
+        assertEquals(isLeapYear(1700), false)
+        assertEquals(isLeapYear(1800), false)
+        assertEquals(isLeapYear(1900), false)
+        assertEquals(isLeapYear(2100), false)
+        assertEquals(isLeapYear(2200), false)
+        assertEquals(isLeapYear(2300), false)
+        assertEquals(isLeapYear(2500), false)
+        assertEquals(isLeapYear(2600), false)
+
+        assertEquals(isLeapYear(1600), true)
+        assertEquals(isLeapYear(2000), true)
+        assertEquals(isLeapYear(2400), true)
+    }
 }
